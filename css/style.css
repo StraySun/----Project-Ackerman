@@ -4,7 +4,11 @@
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'GardensC';
+    src: url(../fonts/GardensC_03_1.otf);
 }
 
 * {
@@ -20,6 +24,10 @@
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+h2, h3 {
+    font-family: 'GardensC';
 }
 
 header {
