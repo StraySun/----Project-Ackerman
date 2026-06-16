@@ -37,7 +37,7 @@ header {
     left: 0;
     width: 100%;
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 2px solid lavender;
     box-shadow: 0 2px 20px slategray;
     z-index: 999;
@@ -130,6 +130,8 @@ nav a:hover {
     padding: 42px 0;
     margin: 0;
     background: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     list-style: none;
     transform: translateY(-200%);
     width: 200px;
@@ -396,4 +398,61 @@ body {
 }
 .card img {
     height: 475px;
+}
+
+
+
+
+
+footer {
+    background: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 1px solid lavender;
+    box-shadow: 0 0 20px slategray;
+    position: relative;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts a {
+    color: #6c5b7b;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 0.9em;
+}
+
+.icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -55px;
+}
+
+.sw a img {
+    width: 50px;
+    border-radius: 25%;
+    background-color: grey;
+}
+.sw a img:hover {
+    transform: translateY(-15px);
+    border-radius: 50%;
 }
