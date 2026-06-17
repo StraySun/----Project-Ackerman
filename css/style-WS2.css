@@ -137,6 +137,17 @@ nav a:hover {
     width: 200px;
     z-index: 100;
 }
+
+.mikasaNav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    padding: 42px 0;
+    transform: translateY(-200%);
+    width: 200px;
+    z-index: 99;
+}
+
 .menu-item {
     display: block;
     padding: 8px;
@@ -152,8 +163,11 @@ nav a:hover {
     color:#6c5b7b;
 }
 .burger-checkbox:checked ~ .menu-list {
-    transform: translateX(0);
-}    
+    transform: translateY(0);
+}
+.burger-checkbox:checked ~ .mikasaNav {
+    transform: translateY(160px);
+}
 
 body {
     background: linear-gradient(135deg, ghostwhite 0%, aliceblue 25%, lavenderblush 50%, ghostwhite 75%, whitesmoke 100%) fixed;
