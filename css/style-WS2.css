@@ -441,32 +441,19 @@ footer {
     color: #6c5b7b;
 }
 
-.tooltip {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: black;
-    color: white;
-    padding: 6px 10px;
-    border-radius: 5px;
-    opacity: 0;
-    visibility: hidden;
-    font-size: 0.9em;
-}
-
-.icon-content:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: -55px;
-}
-
-.sw a img {
-    width: 50px;
-    border-radius: 25%;
-    background-color: grey;
-}
-.sw a img:hover {
-    transform: translateY(-15px);
+.btn-up {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background: linear-gradient(to right,#9198e5, #e66465);
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
     border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+    z-index: 998;
 }
